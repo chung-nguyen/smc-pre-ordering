@@ -1,0 +1,186 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x0cEe3AE0B815Dda892f4AA679535A2fb7077a5C8",
+    "txHash": "0xf63c46faf18dcb04b88de93af209cb62523834797e4d0620e8d507c5b0338716"
+  },
+  "proxies": [
+    {
+      "address": "0xed4bc469dd1431e6F7235fc55D1B6452AfF25EC0",
+      "txHash": "0xf5469cd1ba0b0da57c575223bcde0a078e3f0a0269f0f755fa7a522d4d4a2a27",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "4cdf72da754309860a98e214e8ae73f362e38443a3f6a14f14221d291ca75871": {
+      "address": "0xA44EACc256B0b43AFa61Edb2e2A5061087250670",
+      "txHash": "0x7ab445ec8e693084893834c195379685eea9f0e2a42d431bb1d9f5f349d40826",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "contracts\\PreOrdering.sol:334",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "contracts\\PreOrdering.sol:339"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "contracts\\PreOrdering.sol:526"
+          },
+          {
+            "label": "_status",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_uint256",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "contracts\\PreOrdering.sol:456"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "contracts\\PreOrdering.sol:492"
+          },
+          {
+            "label": "_governor",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_address",
+            "contract": "GovernableUpgradeable",
+            "src": "contracts\\PreOrdering.sol:543"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "GovernableUpgradeable",
+            "src": "contracts\\PreOrdering.sol:608"
+          },
+          {
+            "label": "_deposits",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_mapping(t_address,t_struct(DepositData)685_storage)",
+            "contract": "PreOrdering",
+            "src": "contracts\\PreOrdering.sol:619"
+          },
+          {
+            "label": "_payableToken",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_mapping(t_string_memory_ptr,t_contract(IERC20)77)",
+            "contract": "PreOrdering",
+            "src": "contracts\\PreOrdering.sol:620"
+          },
+          {
+            "label": "_unitPrice",
+            "offset": 0,
+            "slot": "153",
+            "type": "t_uint256",
+            "contract": "PreOrdering",
+            "src": "contracts\\PreOrdering.sol:622"
+          },
+          {
+            "label": "_isPaused",
+            "offset": 0,
+            "slot": "154",
+            "type": "t_bool",
+            "contract": "PreOrdering",
+            "src": "contracts\\PreOrdering.sol:623"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(IERC20)77": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_struct(DepositData)685_storage)": {
+            "label": "mapping(address => struct PreOrdering.DepositData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_contract(IERC20)77)": {
+            "label": "mapping(string => contract IERC20)",
+            "numberOfBytes": "32"
+          },
+          "t_string_memory_ptr": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(DepositData)685_storage": {
+            "label": "struct PreOrdering.DepositData",
+            "members": [
+              {
+                "label": "initialized",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "amount",
+                "type": "t_uint32",
+                "offset": 1,
+                "slot": "0"
+              },
+              {
+                "label": "total",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint32": {
+            "label": "uint32",
+            "numberOfBytes": "4"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          },
+          "t_string_storage": {
+            "label": "string"
+          }
+        }
+      }
+    }
+  }
+}
