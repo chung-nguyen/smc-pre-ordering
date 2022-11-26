@@ -38,9 +38,9 @@ async function interact () {
   const [owner] = await ethers.getSigners();
   console.log("Signer", owner.address);
 
-  const contractData = JSON.parse(fs.readFileSync(path.join(__dirname, '../test', `deployed-private-offering-${argv.network}.json`)));
+  const contractData = JSON.parse(fs.readFileSync(path.join(__dirname, '../test', `deployed-pre-ordering-${argv.network}.json`)));
   
-  const Token = await ethers.getContractFactory("PrivateOffering");
+  const Token = await ethers.getContractFactory("PreOrdering");
   const contract = Token.attach(contractData.proxy);  
 
   while (true) {

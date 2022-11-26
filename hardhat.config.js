@@ -12,7 +12,8 @@ for (let key in secret) {
   secret[key] = Array.isArray(secret[key]) ? secret[key] : [secret[key]];
 }
 
-task("interact", "Interact with REIT NFT Contract").setAction(interact);
+task("interact", "Interact with REIT NFT Contract")
+  .setAction(interact);
 
 /**
  * Contract deployment task
